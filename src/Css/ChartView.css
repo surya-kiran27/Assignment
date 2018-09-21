@@ -1,0 +1,58 @@
+.contain {
+  height: 50vh;
+  margin-left: 20%;
+  width: 80%;
+  background-color: #0c2d53;
+}
+.navbar .input-group {
+  width: 15rem;
+  margin-left: auto;
+  margin-right: 10px;
+  box-shadow: none;
+  border-color: none;
+  border: none;
+}
+.navbar .btn1 {
+  margin-left: 0;
+  color: whitesmoke;
+  padding: 2;
+}
+.navbar .btn2 {
+  margin-right: 10px;
+  color: white;
+  padding: 2;
+}
+
+.input-group .form-control {
+  color: whitesmoke;
+  border-radius: 40px;
+  background-color: #526c88;
+  border-color: none;
+  border: none;
+}
+.input-group .form-control:focus {
+  color: whitesmoke;
+  background-color: #526c88;
+  border-color: none;
+  border: none;
+}
+.input-group-append .input-group-text {
+  color: whitesmoke;
+  border-radius: 40px;
+  background-color: #526c88;
+  border-color: none;
+  border: none;
+}
+.input-group-append {
+  border-color: none;
+  border: none;
+  color: whitesmoke;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #526c88;
+}
+#chart {
+  position: absolute;
+  margin-top: 5rem;
+  color: white;
+}
