@@ -9,7 +9,7 @@ export default class TableView extends Component {
     done: false
   };
   componentDidMount() {
-    axios.get(`http://api.jsonbin.io/b/5b893aa03ffac56f4bd7905a`).then(res => {
+    axios.get(`https://api.jsonbin.io/b/5b893aa03ffac56f4bd7905a`).then(res => {
       this.setState({
         data: [...this.state.data, res.data.data],
         done: true
@@ -19,24 +19,26 @@ export default class TableView extends Component {
   render() {
     return (
       <div className="contain1">
-        <form class="form-inline mt-5" id="inLine">
-          <div class="form-group ">
+        <form className="form-inline mt-5" id="inLine">
+          <div className="form-group ">
             <label className="ml-3 p-2">Add Keyword:</label>
-            <input type="text" value="Enter Keyword" class="form-control fg" />
+            <input
+              type="text"
+              value="Enter Keyword"
+              className="form-control fg"
+            />
           </div>
-          <div class="form-group ">
-            <label className="p-2" for="atg">
-              Assign to Group:
-            </label>
+          <div className="form-group ">
+            <label className="p-2">Assign to Group:</label>
             <input
               type="text"
               value="Group(Optional)"
-              class="form-control fg"
+              className="form-control fg"
               id="atg"
             />
           </div>
 
-          <button class="btn btn-default btn3 ml-2">+ADD</button>
+          <button className="btn btn-default btn3 ml-2">+ADD</button>
 
           <label className=" text-muted ml-auto mr-2" id="label">
             Show

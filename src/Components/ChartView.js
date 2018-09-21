@@ -20,7 +20,7 @@ export default class ChartView extends Component {
     value: "Search"
   };
   componentDidMount() {
-    axios.get(`http://api.jsonbin.io/b/5b893b00db948c68635a04eb`).then(res => {
+    axios.get(`https://api.jsonbin.io/b/5b893b00db948c68635a04eb`).then(res => {
       const x = Object.values(res.data).map(xy => xy.points);
       const labels = Object.keys(res.data);
       let id = 0;
@@ -71,18 +71,18 @@ export default class ChartView extends Component {
             />
             <span className="input-group-append">
               <div className="input-group-text bg-transparent">
-                <i class="far far -search" />
+                <i className="far far -search" />
               </div>
             </span>
           </div>
           <div className="btn btn1">
-            <i class="fa fa-2x fa-user" aria-hidden="true" />
+            <i className="fa fa-2x fa-user" aria-hidden="true" />
           </div>
           <div className="btn btn2">
-            <i class="fa fa-2x fa-bell" aria-hidden="true" />
+            <i className="fa fa-2x fa-bell" aria-hidden="true" />
           </div>
           <div className="btn btn2">
-            <i class="fa fa-2x fa-gear" aria-hidden="true" />
+            <i className="fa fa-2x fa-gear" aria-hidden="true" />
           </div>
         </nav>
         {this.state.done ? (
